@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           mangle: false
         },
         files: {
-          'build/js/scripts.js' : ['src/js/*.js']
+          'build/wp-content/themes/nsr/js/scripts.js' : ['src/js/*.js']
         }
       }
     },
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'build/css/main.css': 'src/sass/main.sass'
+          'build/wp-content/themes/nsr/css/main.css': 'src/sass/main.sass'
         }
       }
     },
@@ -52,14 +52,14 @@ module.exports = function(grunt) {
       dev: {
         bsFiles: {
           src : [
-            'build/css/*.css',
-            'build/js/*.js',
-            'build/*.php'
+            'build/wp-content/themes/nsr/css/*.css',
+            'build/wp-content/themes/nsr/js/*.js',
+            'build/**/*.php'
           ]
         },
         options: {
           open: true,
-          proxy: '127.0.0.1:8888/webmaster2017/build',
+          proxy: '127.0.0.1:8888/nsr/build',
           keepalive: true,
           watchTask: true
         }

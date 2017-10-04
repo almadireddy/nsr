@@ -87,3 +87,8 @@ Temporary Items
 .idea/nsr.iml
 
 .idea/vcs.xml
+
+.sass-cache/
+
+node_modules/
+
