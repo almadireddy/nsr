@@ -22,7 +22,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'build/css/main.css': 'src/sass/*.sass'
+          'build/css/main.css': 'src/sass/main.sass'
         }
       }
     },
