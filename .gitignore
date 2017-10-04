@@ -87,3 +87,9 @@ Temporary Items
 .idea/nsr.iml
 
 .idea/vcs.xml
+.gitignore
+.idea/
+Gruntfile.js
+build/
+package.json
+src/js/
