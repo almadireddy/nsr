@@ -21,7 +21,7 @@ $navOptions = array(
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Narrative Systems</a>
+      <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Narrative Systems</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

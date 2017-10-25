@@ -1,2 +1,56 @@
 @import "vars"
 @import "bootstrap"
+
+.callout
+  @media (min-width: $screen-sm)
+    display: flex
+    margin-top: 85px
+
+.callout-text
+  font-size: 20px
+  font-family: $font-family-subheadings
+  color: $brand-primary
+  margin: 0 0 25px 0
+
+  @media (min-width: $screen-sm) // on desktop
+    border-top:     5px solid $brand-primary
+    border-bottom:  5px solid $brand-primary
+    margin-bottom: 0
+    padding: 0
+    display: flex
+    align-items: center
+
+.section-divider
+  width: 200px
+  margin: 100px auto
+  outline: none
+  border: none
+  height: 5px
+  background: $brand-primary
+
+.section-title
+  text-align: center
+  color: $brand-primary
+  margin-bottom: 35px
+
+footer
+  margin-top: 50px
+
+
+.featured-game
+  margin-bottom: 30px
+  @media (min-width: $screen-sm)
+    display: flex
+
+  > .col-sm-6
+    margin: 0
+    padding: 0
+    height: 250px
+
+  .featured-game-description
+    padding: 15px
+    background: #353535
+    color: #f8f8f8
+
+    h3
+      color: $brand-primary
