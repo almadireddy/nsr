@@ -10,10 +10,15 @@
 
     </div> <!-- /.container -->
 
-    <footer class="blog-footer container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>this is a footer title</h4>
+    <footer class="blog-footer container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 footer-left">
+            <h4>this is a footer title</h4>
+          </div>
+          <div class="col-sm-6 footer-right">
+            <h4>This is the right footer.</h4>
+          </div>
         </div>
       </div>
     </footer>

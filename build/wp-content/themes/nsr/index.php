@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aahladmadireddy
- * Date: 10/4/17
- * Time: 2:49 PM
- */
-
 get_header();
 ?>
 
@@ -51,10 +44,11 @@ get_header();
         <div class="col-sm-6 featured-game-description">
           <h3><?php echo $games -> display('game_title') ?></h3>
           <p><?php echo mb_strimwidth($games -> display('description'), 0, 100, "...") ?></p>
+          <a href="<?php echo get_site_url() . '/game/' . $games -> display('slug') ?>">View More > </a>
         </div>
       </div>
 
-    <?php   if ($i == 1) { ?>
+    <?php  if ($i == 1) { ?>
        </div>
        <div class="row">
     <?php } ?>
