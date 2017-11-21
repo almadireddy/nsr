@@ -4651,7 +4651,6 @@ tbody.collapse.in {
   position: relative;
   min-height: 100px;
   font-family: "Bungee", Helvetica, Arial, sans-serif;
-  margin-bottom: 25px;
   border: 1px solid transparent;
 }
 .navbar:before, .navbar:after {
@@ -7383,12 +7382,13 @@ footer {
 @media (min-width: 768px) {
   .featured-game {
     display: flex;
+    max-height: 300px;
   }
 }
 .featured-game > .col-sm-6 {
   margin: 0;
   padding: 0;
-  height: 250px;
+  height: 275px;
 }
 .featured-game .featured-game-description {
   padding: 15px;
@@ -7397,11 +7397,48 @@ footer {
 }
 .featured-game .featured-game-description h3 {
   color: #F9647D;
+  line-height: 1.1;
 }
 
 .blog-footer {
   padding: 50px;
   background: #f5f5f5;
+}
+
+.post-header {
+  text-align: center;
+  padding: 50px;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  color: #f8f8f8;
+}
+.post-header h1 {
+  margin-bottom: 50px;
+}
+.post-header .game-link {
+  padding: 15px 30px;
+  color: #F9647D;
+  background: #eeeeee;
+  font-family: "Bungee", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+.game-content {
+  background: #eeeeee;
+  padding: 50px;
+  margin: -250px 15px 0 15px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .game-content {
+    margin: -250px auto 0 auto;
+  }
+}
+
+.game-description {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

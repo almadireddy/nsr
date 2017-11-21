@@ -43,7 +43,7 @@ get_header();
         </div>
         <div class="col-sm-6 featured-game-description">
           <h3><?php echo $games -> display('game_title') ?></h3>
-          <p><?php echo mb_strimwidth($games -> display('description'), 0, 100, "...") ?></p>
+          <p class="featured-game-description-paragraph"><?php echo $games -> display('description') ?></p>
           <a href="<?php echo get_site_url() . '/game/' . $games -> display('slug') ?>">View More > </a>
         </div>
       </div>

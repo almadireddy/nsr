@@ -36,16 +36,16 @@
 footer
   margin-top: 50px
 
-
 .featured-game
   margin-bottom: 30px
   @media (min-width: $screen-sm)
     display: flex
+    max-height: 300px
 
   > .col-sm-6
     margin: 0
     padding: 0
-    height: 250px
+    height: 275px
 
   .featured-game-description
     padding: 15px
@@ -54,7 +54,40 @@ footer
 
     h3
       color: $brand-primary
+      line-height: 1.1
+
 
 .blog-footer
   padding: 50px
   background: $navbar-default-bg
+
+.post-header
+  text-align: center
+  padding: 50px
+  height: 500px
+  background-size: cover
+  background-position: center center
+  color: #f8f8f8
+
+  h1
+    margin-bottom: 50px
+
+  .game-link
+    padding: 15px 30px
+    color: $brand-primary
+    background: $gray-lighter
+    font-family: $subheadings-font-family
+    font-size: 22px
+    border-radius: 5px
+
+.game-content
+  background: $gray-lighter
+  padding: 50px
+  margin: -250px 15px 0 15px
+  border-radius: 10px
+
+  @media (min-width: $screen-sm)
+    margin: -250px auto 0 auto
+
+.game-description
+  margin-bottom: 50px
