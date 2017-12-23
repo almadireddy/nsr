@@ -5,6 +5,11 @@
  * Time: 3:02 PM
  */
 
+function custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 function trimString($limit, $toTrim) {
   $excerpt = explode(' ', $toTrim, $limit);
   if (count($excerpt)>=$limit) {
