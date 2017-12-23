@@ -11,12 +11,12 @@
 
 <body>
 
-<?php  if (is_home()) :  ?>
+<?php  if (is_front_page()) :  ?>
 
   <div class="jumbotron">
     <div class="container">
       <h1>Narrative Systems Research Lab</h1>
-      <h2><?php echo get_option('subtitle') ?></h2>
+      <h2><?php echo get_option('nsr_settings_home_page_sub') ?></h2>
     </div>
   </div>
 

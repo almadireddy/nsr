@@ -59,7 +59,7 @@ module.exports = function(grunt) {
         },
         options: {
           open: true,
-          proxy: '127.0.0.1:8888/nsr/build',
+          proxy: '127.0.0.1:8888/nsr/build/',
           keepalive: true,
           watchTask: true
         }

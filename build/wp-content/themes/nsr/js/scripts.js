@@ -1,2 +1,2 @@
-/*! NSR 2017-11-07 */
-function truncateByHeight(element,height){for(var i=0;i<element.length;i++){for(var textContent=void 0===element[i].textContent?"innerText":"textContent",parts=element[i][textContent].split(" ");parts.pop()&&element[i].clientHeight>height;)element[i][textContent]=parts.join(" ");element[i][textContent]+="..."}}var elements=document.querySelectorAll(".featured-game-description-paragraph");truncateByHeight(elements,100);
+/*! NSR 2017-12-21 */
+function truncateByHeight(element,height){for(var i=0;i<element.length;i++){for(var textContent=void 0===element[i].textContent?"innerText":"textContent",parts=element[i][textContent].split(" ");parts.pop()&&element[i].clientHeight>height;)element[i][textContent]=parts.join(" ");element[i][textContent]+="..."}}var elements=document.querySelectorAll(".featured-game-description-paragraph");jQuery(document).ready(function(){truncateByHeight(elements,100)});
