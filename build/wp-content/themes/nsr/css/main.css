@@ -7349,8 +7349,20 @@ button.close {
   margin-bottom: 35px;
 }
 
-footer {
-  margin-top: 50px;
+.recent-news {
+  margin-bottom: 50px;
+}
+
+.blog-post {
+  background-color: #353535;
+  color: #f8f8f8;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .blog-post {
+    margin-bottom: 0;
+  }
 }
 
 .featured-game {
@@ -7375,6 +7387,10 @@ footer {
 .featured-game .featured-game-description h3 {
   color: #F9647D;
   line-height: 1.1;
+}
+
+footer {
+  margin-top: 50px;
 }
 
 .blog-footer {

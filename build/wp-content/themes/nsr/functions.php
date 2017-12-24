@@ -5,6 +5,13 @@
  * Time: 3:02 PM
  */
 
+function is_latest() {
+  global $post;
+  $loop = get_posts( 'numberposts=1' );
+  $latest = $loop[0]->ID;
+  return ( $post->ID == $latest ) ? true : false;
+}
+
 function custom_excerpt_length( $length ) {
   return 20;
 }

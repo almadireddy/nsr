@@ -33,8 +33,18 @@
   color: $brand-primary
   margin-bottom: 35px
 
-footer
-  margin-top: 50px
+
+.recent-news
+  margin-bottom: 50px
+
+.blog-post
+  background-color: $background-dark
+  color: #f8f8f8
+  padding: 30px
+  margin-bottom: 30px
+
+  @media (min-width: $screen-sm)
+    margin-bottom: 0
 
 .featured-game
   margin-bottom: 30px
@@ -49,13 +59,15 @@ footer
 
   .featured-game-description
     padding: 15px
-    background: #353535
+    background: $background-dark
     color: #f8f8f8
 
     h3
       color: $brand-primary
       line-height: 1.1
 
+footer
+  margin-top: 50px
 
 .blog-footer
   padding: 50px

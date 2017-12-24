@@ -18,21 +18,23 @@ get_header();
       <h2>Recent News</h2>
     </div>
 
-    <?php
-    $query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3));
+    <?php $query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3)); ?>
 
-    ?>
-    <div class="row">
+    <div class="row recent-news">
     <?php
     if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();?>
 
-        <div class="col-sm-4">
-          <?php get_template_part( 'template-parts/content/content', get_post_format() ); ?>
-        </div>
+      <div class="col-sm-4 blog-post-feature">
+        <?php get_template_part('template-parts/content/content', get_post_format()); ?>
+      </div>
 
-      <?php
-      endwhile; endif;
-      ?>
+      <?php endwhile; endif; ?>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="text-center"><a href="./news">More <i class="fa fa-chevron-right"></i></a></h3>
+      </div>
     </div>
 
     <hr class="section-divider">
@@ -63,7 +65,7 @@ get_header();
         <div class="col-sm-6 featured-game-description">
           <h3><?php echo $games -> display('game_title') ?></h3>
           <p class="featured-game-description-paragraph"><?php echo trimString(15, $games -> display('description')) ?></p>
-          <a href="<?php echo get_site_url() . '/game/' . $games -> display('slug') ?>">View More > </a>
+          <a href="<?php echo get_site_url() . '/game/' . $games -> display('slug') ?>">View More</a>
         </div>
       </div>
 
@@ -77,5 +79,6 @@ get_header();
       ?>
 
     </div>
+  </div>
 <?php
 get_footer();
