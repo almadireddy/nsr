@@ -8,6 +8,5 @@
 
   <p><?php echo get_the_excerpt() ?></p>
   <p><a href="<?php echo get_post_permalink(get_the_ID()) ?>">Read more</a></p>
-
   <hr>
 </div>
