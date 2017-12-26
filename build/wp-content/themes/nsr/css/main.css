@@ -7411,6 +7411,16 @@ button.close {
   background: #f5f5f5;
   padding: 30px;
 }
+.categories-panel h4 {
+  margin-bottom: 15px;
+}
+.categories-panel .categories-list {
+  padding: 0;
+}
+.categories-panel .categories-list li {
+  margin-bottom: 15px;
+  list-style-type: none;
+}
 
 .single-post h1 {
   font-family: "Bungee", Helvetica, Arial, sans-serif;

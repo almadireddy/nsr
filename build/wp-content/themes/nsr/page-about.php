@@ -1,13 +1,29 @@
 <?php // about page
-get_header();
+get_header(); ?>
 
-if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <?php
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  echo "about page";
-  the_content();
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 page-title">
+      <h1>About</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <p>this is the about paragraph.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <?php the_content(); ?>
+    </div>
+  </div>
+</div>
 
-endwhile; endif;
+
+
+<?php endwhile; endif;
 
 get_footer();
