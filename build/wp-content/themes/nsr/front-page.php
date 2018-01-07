@@ -15,7 +15,9 @@ get_header();
     <hr class="section-divider">
 
     <div class="row section-title">
-      <h2>Recent News</h2>
+      <div class="col-sm-12">
+        <h2>Recent News</h2>
+      </div>
     </div>
 
     <?php $query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3)); ?>

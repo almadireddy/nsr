@@ -2,16 +2,17 @@
 get_header(); ?>
 
 
-<div class="container news-listing">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 page-title">
+      <h1>News</h1>
+    </div>
+  </div>
   <?php
   if (have_posts()): $postCount = 0; while (have_posts()):
     $postCount ++;
     the_post(); ?>
-    <div class="row">
-      <div class="col-sm-12 page-title">
-        <h1>News</h1>
-      </div>
-    </div>
+
     <div class="row news-listing-item">
       <div class="col-sm-8 news-post">
         <?php get_template_part('template-parts/content/news-listing', get_post_format()); ?>
