@@ -50,18 +50,15 @@ get_header(); ?>
       </div>
     </div>
     <div class="row">
+    <?php
+    for ($i = 1; $i < 5; $i++):
+    ?>
+
       <div class="col-sm-3">
-        <img src="http://unsplash.it/800/600?blur" alt="" class="img-responsive">
+        <img src="<?php echo pods_image_url(get_option('nsr_settings_partner_logos')[$i-1], null) ?>" alt="" class="img-responsive">
       </div>
-      <div class="col-sm-3">
-        <img src="http://unsplash.it/800/600?blur" alt="" class="img-responsive">
-      </div>
-      <div class="col-sm-3">
-        <img src="http://unsplash.it/800/600?blur" alt="" class="img-responsive">
-      </div>
-      <div class="col-sm-3">
-        <img src="http://unsplash.it/800/600?blur" alt="" class="img-responsive">
-      </div>
+
+    <?php endfor; ?>
     </div>
   </section>
 </div>
