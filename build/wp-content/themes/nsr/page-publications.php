@@ -3,9 +3,14 @@ get_header();
 
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <?php
+<div class="container about-page">
+  <div class="row">
+    <div class="col-sm-12 page-title">
+      <h1>Publications</h1>
+    </div>
+  </div>
 
-  echo "publications page";
+  <?php
   the_content();
 
 endwhile; endif;
