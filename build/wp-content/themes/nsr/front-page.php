@@ -62,7 +62,7 @@ get_header();
       ?>
 
       <div class="col-sm-6 featured-game">
-        <div class="col-sm-6" style="background-image: url(<?php echo $screenshots[0] ?>); background-size: cover; background-position: center;">
+        <div class="col-sm-6 featured-game-img" style="background-image: url(<?php echo $screenshots[0] ?>); background-size: cover; background-position: center;">
         </div>
         <div class="col-sm-6 featured-game-description">
           <h3><?php echo $games -> display('game_title') ?></h3>

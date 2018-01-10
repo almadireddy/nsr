@@ -7316,6 +7316,9 @@ button.close {
     margin-top: 85px;
   }
 }
+.callout img {
+  border-radius: 5px;
+}
 
 .callout-text {
   font-size: 20px;
@@ -7361,6 +7364,7 @@ button.close {
 
 .news-listing-item {
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 .news-listing-item img {
   margin-bottom: 30px;
@@ -7417,6 +7421,7 @@ button.close {
 .categories-panel {
   background: #f5f5f5;
   padding: 30px;
+  border-radius: 5px;
 }
 .categories-panel h4 {
   margin-bottom: 15px;
@@ -7440,9 +7445,10 @@ button.close {
 .single-post img {
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5px;
 }
 
-.about-page section {
+.about-page section, .people-page section {
   margin-bottom: 100px;
 }
 
@@ -7455,6 +7461,7 @@ button.close {
   color: #f8f8f8;
   padding: 30px;
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 @media (min-width: 768px) {
   .blog-post {
@@ -7480,10 +7487,16 @@ button.close {
   padding: 15px;
   background: #353535;
   color: #f8f8f8;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .featured-game .featured-game-description h3 {
   color: #F9647D;
   line-height: 1.1;
+}
+.featured-game .featured-game-img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 footer {
@@ -7536,6 +7549,19 @@ footer {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.name {
+  color: #F9647D;
+}
+
+.person h3 {
+  line-height: 32px;
+  margin-top: 15px;
+}
+
+.current-members {
+  margin-bottom: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */

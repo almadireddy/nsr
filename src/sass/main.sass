@@ -6,6 +6,9 @@
     display: flex
     margin-top: 85px
 
+  img
+    border-radius: 5px
+
 .callout-text
   font-size: 20px
   font-family: $font-family-subheadings
@@ -44,6 +47,7 @@
 
 .news-listing-item
   margin-bottom: 30px
+  border-radius: 5px
 
   img
     margin-bottom: 30px
@@ -91,6 +95,7 @@
 .categories-panel
   background: $navbar-default-bg
   padding: 30px
+  border-radius: 5px
 
   h4
     margin-bottom: 15px
@@ -114,8 +119,9 @@
     @extend .img-responsive
     margin-left: auto
     margin-right: auto
+    border-radius: 5px
 
-.about-page
+.about-page, .people-page
   section
     margin-bottom: 100px
 
@@ -127,6 +133,7 @@
   color: #f8f8f8
   padding: 30px
   margin-bottom: 30px
+  border-radius: 5px
 
   @media (min-width: $screen-sm)
     margin-bottom: 0
@@ -146,10 +153,16 @@
     padding: 15px
     background: $background-dark
     color: #f8f8f8
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
 
     h3
       color: $brand-primary
       line-height: 1.1
+
+  .featured-game-img
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
 
 footer
   margin-top: 50px
@@ -194,3 +207,14 @@ footer
   align-items: center
   justify-content: center
   margin-bottom: 50px
+
+.name
+  color: $brand-primary
+
+.person
+  h3
+    line-height: 32px
+    margin-top: 15px
+
+.current-members
+  margin-bottom: 35px
