@@ -4,7 +4,7 @@
  * Date: 10/4/17
  * Time: 3:02 PM
  */
-function wpbeginner_numeric_posts_nav() {
+function numeric_pagination() {
   if( is_singular() )
     return;
 

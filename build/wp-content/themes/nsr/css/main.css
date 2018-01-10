@@ -7469,9 +7469,13 @@ button.close {
   }
 }
 
-.featured-game {
-  margin-bottom: 30px;
+.featured-games {
+  margin-bottom: 50px;
 }
+.featured-games .row {
+  margin-bottom: 35px;
+}
+
 @media (min-width: 768px) {
   .featured-game {
     display: flex;
@@ -7553,6 +7557,19 @@ footer {
 
 .name {
   color: #F9647D;
+}
+
+.games {
+  margin-bottom: 35px;
+}
+
+.game img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.game a {
+  line-height: 32px;
+  display: block;
 }
 
 .person h3 {

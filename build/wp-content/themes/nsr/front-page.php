@@ -47,39 +47,46 @@ get_header();
       </div>
     </div>
 
-    <div class="row">
-      <?php
-      $params = array(
-        'limit' => 4,
-        'where'=> "featured.meta_value = 1"
-      );
+    <section class="featured-games">
+      <div class="row">
+        <?php
+        $params = array(
+          'limit' => 4,
+          'where'=> "featured.meta_value = 1"
+        );
 
-      $games = pods( 'game', $params );
+        $games = pods( 'game', $params );
 
-      for ($i = 0; $i < 4; $i++):
-      $games->fetch();
-      $screenshots = array_filter(explode(" ", $games->display('screenshots')), 'parse_url');
-      ?>
+        for ($i = 0; $i < 4; $i++):
+        $games->fetch();
+        $screenshots = array_filter(explode(" ", $games->display('screenshots')), 'parse_url');
+        ?>
 
-      <div class="col-sm-6 featured-game">
-        <div class="col-sm-6 featured-game-img" style="background-image: url(<?php echo $screenshots[0] ?>); background-size: cover; background-position: center;">
+        <div class="col-sm-6 featured-game">
+          <div class="col-sm-6 featured-game-img" style="background-image: url(<?php echo $screenshots[0] ?>); background-size: cover; background-position: center;">
+          </div>
+          <div class="col-sm-6 featured-game-description">
+            <h3><?php echo $games -> display('game_title') ?></h3>
+            <p class="featured-game-description-paragraph"><?php echo trimString(15, $games -> display('description')) ?></p>
+            <a href="<?php echo get_site_url() . '/game/' . $games -> display('slug') ?>">View More</a>
+          </div>
         </div>
-        <div class="col-sm-6 featured-game-description">
-          <h3><?php echo $games -> display('game_title') ?></h3>
-          <p class="featured-game-description-paragraph"><?php echo trimString(15, $games -> display('description')) ?></p>
-          <a href="<?php echo get_site_url() . '/game/' . $games -> display('slug') ?>">View More</a>
-        </div>
+
+        <?php  if ($i == 1) { ?>
       </div>
+      <div class="row">
+        <?php } ?>
 
-      <?php  if ($i == 1) { ?>
-    </div>
+        <?php
+        endfor;
+        ?>
+
+      </div>
+    </section>
     <div class="row">
-      <?php } ?>
-
-      <?php
-      endfor;
-      ?>
-
+      <div class="col-sm-12">
+        <h3 class="text-center"><a href="./research">More <i class="fa fa-chevron-right"></i></a></h3>
+      </div>
     </div>
   </div>
 <?php

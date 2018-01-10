@@ -4,7 +4,7 @@ get_header();
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 $param = array(
-  'limit' => 50,
+  'limit' => 0,
 );
 
 $people = pods('person', $param);
@@ -44,7 +44,7 @@ $people = pods('person', $param);
     <div class="row current-members">
     <?php
     $param = array(
-      'limit' => 50,
+      'limit' => 0,
     );
 
     $people = pods('person', $param);
@@ -62,6 +62,7 @@ $people = pods('person', $param);
     </div>
     <div class="row">
     <?php endif; endif; endwhile;?>
+    </div>
   </section>
 
   <!--<section>
@@ -73,7 +74,7 @@ $people = pods('person', $param);
     <div class="row">
       <?php
 /*      $param = array(
-        'limit' => 50,
+        'limit' => 0,
       );
 
       $people = pods('person', $param);
@@ -91,6 +92,7 @@ $people = pods('person', $param);
     </div>
     <div class="row">
       <?php /*endif; endif; endwhile;*/?>
+    </div
   </section>-->
 
 </div>
