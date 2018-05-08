@@ -52,13 +52,13 @@ $people = pods('person', $param);
     $counter = 0;
     while ($people->fetch()):
       if ($people->is( 'typeofperson', 'Current Member')): ?>
-      <div class="col-sm-3 person">
+      <div class="col-sm-4 person">
         <img src="<?php echo pods_image_url($people->display('profile'), null)?>" alt="" class="img-responsive">
         <h3 class="name"><?php echo $people->display('fullname')?></h3>
         <h4><?php echo $people->display('jobtitle')?></h4>
         <p><?php echo $people->display('description')?></p>
       </div>
-    <?php $counter++; if ($counter % 4 == 0): ?>
+    <?php $counter++; if ($counter % 3 == 0): ?>
     </div>
     <div class="row">
     <?php endif; endif; endwhile;?>

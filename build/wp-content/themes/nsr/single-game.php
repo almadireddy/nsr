@@ -12,19 +12,25 @@ if ( have_posts() ) : while ( have_posts() ) :
   $description = $game -> display('description');
   $featuredImage = $game -> display('header_image');
   $playLink = $game -> display('file');
+
+  $gameAuthor = $game -> display('game_author');
+  $gameAuthorDescription = $game -> display('author_description');
+  $gameAuthorPicture = $game -> display('author_picture');
 ?>
 
 <div class="container-fluid post-header" style="background-image: url(<?php echo $featuredImage ?>)">
   <div class="row">
     <div class="col-sm-12 game-title">
-      <h1><?php echo the_title() ?></h1>
+      <h1><?php echo $game->display('game_title') ?></h1>
     </div>
   </div>
+  <?php if ($playLink != null): ?>
   <div class="row">
     <div class="col-sm-12">
       <a href="<?php echo $playLink?>" class="game-link">Play</a>
     </div>
   </div>
+  <?php endif; ?>
 </div>
 
 <div class="container game-content">
@@ -37,11 +43,11 @@ if ( have_posts() ) : while ( have_posts() ) :
   <div class="row">
     <div class="col-sm-8 col-sm-push-2 author">
       <div class="col-sm-6">
-        <img src="http://unsplash.it/400" alt="" class="img-responsive author-picture">
+        <img src="<?php echo pods_image_url($gameAuthorPicture, null) ?>" alt="" class="img-responsive author-picture">
       </div>
       <div class="col-sm-6 author-text">
-        <h3>Firstname Lastname</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolores harum itaque quaerat repellendus. A blanditiis cum, debitis delectus deleniti enim esse illo laboriosam, natus nostrum perspiciatis quidem reiciendis tenetur unde veritatis voluptas voluptatem. Adipisci at consectetur consequuntur dicta, ea illum in, ipsa magni nulla, optio placeat quibusdam sed temporibus?</p>
+        <h3><?php echo $gameAuthor ?></h3>
+        <p><?php echo $gameAuthorDescription ?></p>
       </div>
     </div>
   </div>
